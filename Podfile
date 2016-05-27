@@ -7,4 +7,5 @@ pod 'MJExtension', '~> 2.5.5'
 pod 'YTKNetwork'
 pod 'MBProgressHUD', '~> 0.9.1'
 pod 'CYLTabBarController', '~> 1.4.4'
+pod 'Masonry', '~> 1.0.0'
 end

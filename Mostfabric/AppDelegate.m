@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LoginController.h"
+#import "YTKNetworkConfig.h"
 @interface AppDelegate ()
 
 @end
@@ -17,12 +18,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-
+    LoginController *loginVC = [[LoginController alloc]initWithNibName:@"LoginController" bundle:nil];
+    self.window.rootViewController = loginVC;
+    [self suitScreen];
+    YTKNetworkConfig *config = [YTKNetworkConfig sharedInstance];
+    config.baseUrl = kBaseUrl;
     [self.window makeKeyAndVisible];
-
+    
+    
     return YES;
 }
-
+//适配屏幕
+-(void)suitScreen{
+    if ([UIScreen mainScreen].bounds.size.height>480) {
+        self.autoSizeScaleX = [UIScreen mainScreen].bounds.size.width/320;
+        
+        self.autoSizeScaleY = [UIScreen mainScreen].bounds.size.height/568;
+    }else{
+        self.autoSizeScaleX = 1;
+        
+        self.autoSizeScaleY = 1;
+    }
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
