@@ -24,7 +24,7 @@
     YTKNetworkConfig *config = [YTKNetworkConfig sharedInstance];
     config.baseUrl = kBaseUrl;
     NSLog(@"hahah");
-    NSLog(@"branch20170727test111");
+    NSLog(@"branch20170727test222");
     [self.window makeKeyAndVisible];
     
     
