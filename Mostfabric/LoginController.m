@@ -25,7 +25,7 @@ static NSString * const RandCodeTFPlaceholder = @"请输入验证码";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSLog(@"status");
     [self initUI];
     
     

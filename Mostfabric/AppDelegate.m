@@ -23,7 +23,6 @@
     [self suitScreen];
     YTKNetworkConfig *config = [YTKNetworkConfig sharedInstance];
     config.baseUrl = kBaseUrl;
-    NSLog(@"hahah");
     [self.window makeKeyAndVisible];
     
     
