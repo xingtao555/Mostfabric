@@ -24,7 +24,7 @@
     YTKNetworkConfig *config = [YTKNetworkConfig sharedInstance];
     config.baseUrl = kBaseUrl;
     [self.window makeKeyAndVisible];
-    
+    //哈哈
     
     return YES;
 }
