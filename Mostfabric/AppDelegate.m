@@ -25,7 +25,7 @@
     config.baseUrl = kBaseUrl;
     [self.window makeKeyAndVisible];
     //哈哈
-    
+    //嘻嘻
     return YES;
 }
 //适配屏幕
