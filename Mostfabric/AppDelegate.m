@@ -24,9 +24,7 @@
     YTKNetworkConfig *config = [YTKNetworkConfig sharedInstance];
     config.baseUrl = kBaseUrl;
     [self.window makeKeyAndVisible];
-    NSLog(@"wwwww");
-    //哈哈
-    //xxxxxxx
+   
     return YES;
 }
 //适配屏幕
