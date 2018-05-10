@@ -1,0 +1,21 @@
+{
+	"status": 0,
+	"msg": null,
+	"data": {
+		"barcodeScannerView": {
+			"scanditDeadLine": "20181228",
+			"locationImageIncludeSuccessMs": 3000,
+			"diffTypeSuccessMaxInterval": 1000,
+			"locationImageExcludeSuccessMs": 3000,
+			"maxUploadVideoOneDay": 3,
+			"invalidImageFrame": 5,
+			"shouldRecord": true,
+			"postBarcodeScannerType": "system",
+			"barcodeScannerType": "scandit",
+			"shouldUpload": false
+		},
+		"localPackage": {
+			"qpUpdateTimeout": 10
+		}
+	}
+}
